@@ -14,6 +14,7 @@ sudo apt -y purge tuxedo-keyboard
 sudo apt -y purge tuxedo-cc-wmi tuxedo-control-center
 sudo apt -y purge tuxedo-oled-brt
 sudo apt -y purge tuxedo-tomte
+sudo apt -y purge tuxedo-webfai-creator
 
 # This seems to be too much
 #echo "removing tuxedo repositories"
