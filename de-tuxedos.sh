@@ -11,6 +11,9 @@
 #sudo apt list --installed | grep tuxedo | tr '/' ' ' | awk '{ print $1 }' | xargs sudo apt -y purge
 
 sudo apt -y purge tuxedo-keyboard
+sudo apt -y purge tuxedo-cc-wmi tuxedo-control-center
+sudo apt -y purge tuxedo-oled-brt
+sudo apt -y purge tuxedo-tomte
 
 # This seems to be too much
 #echo "removing tuxedo repositories"
