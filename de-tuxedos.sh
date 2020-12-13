@@ -10,6 +10,8 @@
 #
 #sudo apt list --installed | grep tuxedo | tr '/' ' ' | awk '{ print $1 }' | xargs sudo apt -y purge
 
+sudo apt -y purge tuxedo-keyboard
+
 # This seems to be too much
 #echo "removing tuxedo repositories"
 #sudo rm /etc/apt/sources.list.d/*tuxedo*.list
