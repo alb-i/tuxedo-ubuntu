@@ -8,6 +8,7 @@ mkdir -p "$HOME/local"
 mkdir -p "$HOME/var"
 mkdir -p "$HOME/env"
 mkdir -p "$HOME/git"
+mkdir -p "$HOME/.local/bin"
 
 echo "installing goodies..."
 
