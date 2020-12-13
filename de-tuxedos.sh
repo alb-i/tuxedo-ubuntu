@@ -7,6 +7,9 @@ sudo apt list --installed | grep tuxedo | tr '/' ' ' | awk '{ print $1 }' | xarg
 echo "removing tuxedo repositories"
 sudo rm /etc/apt/sources.list.d/*tuxedo*.list
 
+echo "using canonical repos"
+sudo sed 's#mirrors.tuxedocomputers.com/ubuntu/mirror/##' -i sources.list
+
 echo "updating..."
 sudo apt -y update
 
