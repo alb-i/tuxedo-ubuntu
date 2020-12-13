@@ -1,6 +1,11 @@
 #!/bin/bash
 
 #We cannot remove all the packages, as this breaks encrypted booting.
+#On the other hand, I'm pretty sure that at least the keyboard driver is seriously flawed causing
+#crashes where the firmware goes down and you cannot power down the notebook until the battery is drained.
+#
+#A quick remedy seems to be to unload the keyboard driver.
+#
 #echo "remove all packages with tuxedo in their names..."
 #
 #sudo apt list --installed | grep tuxedo | tr '/' ' ' | awk '{ print $1 }' | xargs sudo apt -y purge
